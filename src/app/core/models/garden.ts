@@ -2,6 +2,6 @@ import { Plant } from './plant';
 
 export interface Garden {
     name: string;
-    squere: number;
+    square: number;
     plants: Plant[];
 }

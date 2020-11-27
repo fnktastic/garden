@@ -3,6 +3,7 @@ export interface Plant {
     age: number;
     health: number;
     type: 'herb' | 'flower' | 'bush' | 'tree' | 'fruit-tree';
+    size: 'medium' | 'small' | 'large';
     species: string;
-    place: string;
+    placeOfGrowth: string;
 }
