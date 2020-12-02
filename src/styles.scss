@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+.main-block {
+    width: 400px;
+    margin: 0 0 5ch 0;
+}
+
+div label {
+    display: grid;
+}

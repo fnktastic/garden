@@ -1,0 +1,16 @@
+<div *ngIf="!garden.name" class="main-block">
+    <label>Name:
+        <input #name type="text" />
+    </label>
+    <label>Square:
+        <input #square type="text" />
+    </label>
+    <button (click)="setGarden(name.value, square.value); name.value=''; square.value=''">
+        set
+    </button>
+</div>
+<div *ngIf="garden.name" class="main-block">
+    <h2>
+        {{ garden.name }} ({{ garden.square }} sq. meters)
+    </h2>
+</div>

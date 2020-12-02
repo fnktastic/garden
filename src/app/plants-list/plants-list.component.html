@@ -1,0 +1,23 @@
+<div>
+<table *ngIf="plants.length > 0">
+    <caption>Plants</caption>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Helath</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Species</th>
+        <th>Place of Growth</th>
+    </tr>
+    <tr *ngFor="let plant of plants">
+        <td>{{ plant.name }}</td>
+        <td>{{ plant.age }}</td>
+        <td>{{ plant.health }}</td>
+        <td>{{ plant.type }}</td>
+        <td>{{ plant.size }}</td>
+        <td>{{ plant.species }}</td>
+        <td>{{ plant.placeOfGrowth }}</td>
+    </tr>
+</table>
+</div>

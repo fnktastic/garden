@@ -1,0 +1,37 @@
+<div class="main-block">
+    <label>Name:
+        <input #name type="text" />
+    </label>
+    <label>Age:
+        <input #age type="text" />
+    </label>
+    <label>Health:
+        <input #health type="text" />
+    </label>
+    <label>Type:
+        <select #type>
+            <option>herb</option>
+            <option>flower</option>
+            <option>bush</option>
+            <option>tree</option>
+            <option>fruit-tree</option>
+        </select>
+    </label>
+    <label>Size:
+        <select #size>
+            <option>medium</option>
+            <option>small</option>
+            <option>large</option>
+        </select>
+    </label>
+    <label>Species:
+        <input #species type="text" />
+    </label>
+    <label>Place Of Growth:
+        <input #placeOfGrowth type="text" />
+    </label>
+    <button (click)="addPlant(name.value, age.value, health.value, type.value, size.value, species.value, placeOfGrowth.value);
+                     name.value=''; age.value=''; health.value=''; type.value=''; size.value=''; species.value=''; placeOfGrowth.value='';" >
+        add
+    </button>
+</div>
